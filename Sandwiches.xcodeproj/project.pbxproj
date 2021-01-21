@@ -19,6 +19,8 @@
 		7D6D379525B9042B00329C07 /* Sandwich.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D379325B9042B00329C07 /* Sandwich.swift */; };
 		7D6D37A025B90BC700329C07 /* SandwichDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D379F25B90BC700329C07 /* SandwichDetail.swift */; };
 		7D6D37A125B90BC700329C07 /* SandwichDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D379F25B90BC700329C07 /* SandwichDetail.swift */; };
+		7D6D37A725B91C5D00329C07 /* SandwichStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D37A625B91C5D00329C07 /* SandwichStore.swift */; };
+		7D6D37A825B91C5D00329C07 /* SandwichStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D37A625B91C5D00329C07 /* SandwichStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,7 @@
 		7D6D378E25B9040A00329C07 /* Sandwiches.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Sandwiches.xcassets; sourceTree = "<group>"; };
 		7D6D379325B9042B00329C07 /* Sandwich.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sandwich.swift; sourceTree = "<group>"; };
 		7D6D379F25B90BC700329C07 /* SandwichDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandwichDetail.swift; sourceTree = "<group>"; };
+		7D6D37A625B91C5D00329C07 /* SandwichStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandwichStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,7 @@
 				7D6D376C25B901C800329C07 /* ContentView.swift */,
 				7D6D379F25B90BC700329C07 /* SandwichDetail.swift */,
 				7D6D379325B9042B00329C07 /* Sandwich.swift */,
+				7D6D37A625B91C5D00329C07 /* SandwichStore.swift */,
 				7D6D378E25B9040A00329C07 /* Sandwiches.xcassets */,
 				7D6D376D25B901CC00329C07 /* Assets.xcassets */,
 			);
@@ -201,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D6D37A725B91C5D00329C07 /* SandwichStore.swift in Sources */,
 				7D6D378025B901CC00329C07 /* ContentView.swift in Sources */,
 				7D6D377E25B901CC00329C07 /* SandwichesApp.swift in Sources */,
 				7D6D379425B9042B00329C07 /* Sandwich.swift in Sources */,
@@ -212,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D6D37A825B91C5D00329C07 /* SandwichStore.swift in Sources */,
 				7D6D378125B901CC00329C07 /* ContentView.swift in Sources */,
 				7D6D377F25B901CC00329C07 /* SandwichesApp.swift in Sources */,
 				7D6D379525B9042B00329C07 /* Sandwich.swift in Sources */,

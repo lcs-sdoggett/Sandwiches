@@ -8,30 +8,61 @@
 import SwiftUI
 
 struct ContentView: View {
-    var sandwiches: [Sandwich] = []
+    @ObservedObject var store: SandwichStore
     
     var body: some View {
         NavigationView {
             List {
-                ForEach (sandwiches) { sandwich in
+                ForEach (store.sandwiches) { sandwich in
                     SandwichCell(sandwich: sandwich)
                 }
+                .onMove(perform: moveSandwiches)
+                .onDelete(perform: deleteSandwiches)
                 
                 HStack {
                     Spacer()
-                    Text("\(sandwiches.count) Sandwiches")
+                    Text("\(store.sandwiches.count) Sandwiches")
                         .foregroundColor(.secondary)
                     Spacer()
                 }
             }
             .navigationTitle("Sandwiches")
+            .toolbar {
+                #if os(iOS)
+                EditButton()
+                #endif
+                Button("Add", action: makeSandwich)
+            }
+            
+            Text("Select a Sandwich")
+                .font(.largeTitle)
         }
     }
+    
+    func makeSandwich() {
+        withAnimation {
+            store.sandwiches.append(Sandwich(name: "Patty melt", ingredientCount: 3))
+        }
+    }
+    
+    func moveSandwiches(from: IndexSet, to: Int) {
+        withAnimation {
+            store.sandwiches.move(fromOffsets: from, toOffset: to)
+        }
+    }
+    
+    func deleteSandwiches(Offsets: IndexSet) {
+        withAnimation {
+            store.sandwiches.remove(atOffsets: Offsets)
+        }
+    }
+
+
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(sandwiches: testData)
+        ContentView(store: testStore)
     }
 }
 
